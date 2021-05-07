@@ -13,6 +13,7 @@ const addNote = (title, body) => {
     //If there is no duplicate note is found the duplicateTitleNote value will be undefined
     //So to handle that case compare the duplicateTitleNote is undefined or not.
     const duplicateTitleNote = notes.find(note => note.title === title)
+    debugger
     if (duplicateTitleNote === undefined) {
         notes.push({
             title: title,
